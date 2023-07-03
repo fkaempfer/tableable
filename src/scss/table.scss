@@ -1,0 +1,13 @@
+.tableable {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.tbb-r1 {
+  display: flex;
+}
+.tableable table {
+  table-layout: fixed;
+  white-space: nowrap;
+}

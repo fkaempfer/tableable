@@ -1,0 +1,47 @@
+.tbb-scrollbar-h {
+  height: 0.5em;
+}
+
+.tbb-scrollbar-v {
+  width: 0.5em;
+}
+.tbb-scrollbar {
+  border: 1px solid #ddd;
+  align-self: stretch;
+  transition: all 0.1s ease-in;
+  position: relative;
+  cursor: grab;
+}
+.tbb-scrollbar:hover,
+.tbb-scrollbar.hover {
+  background-color: #aaa;
+}
+.tbb-scrollbar-indicator {
+  width: 0.5em;
+  height: 0.5em;
+  background: #eee;
+  border-radius: 0.1em;
+  transition: all 0.1s ease-in;
+  position: absolute;
+}
+
+.tbb-scrollbar-indicator.hover,
+.tbb-scrollbar-indicator:hover {
+  transform: scaleX(2);
+  background: #5b9cda;
+}
+
+@media (prefers-color-scheme: dark) {
+  .tbb-scrollbar {
+    border: 1px solid #555;
+  }
+  .tbb-scrollbar:hover,
+  .tbb-scrollbar.hover {
+    background-color: #444;
+  }
+  .tbb-scrollbar-indicator {
+    width: 0.5em;
+    height: 0.5em;
+    background: #555;
+  }
+}
